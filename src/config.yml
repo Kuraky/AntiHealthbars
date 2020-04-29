@@ -1,0 +1,3 @@
+#Custom health to be displayed instead
+#Must be higher than 0
+custom-health: 20.0

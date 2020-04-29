@@ -1,0 +1,14 @@
+name: AntiHealthbars
+main: me.kuraky.antihealthbars.AntiHealthbars
+version: 0.1.0b
+description: Blocks healthbar mods
+api-version: 1.15
+author: Kuraky
+depend: [ProtocolLib]
+permissions:
+  antihealthbars.reload:
+    description: Allows reloading the config
+commands:
+  ahreload:
+    description: Reloads the config
+    permission: antihealthbars.reload
