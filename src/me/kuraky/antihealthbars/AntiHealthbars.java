@@ -7,11 +7,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class AntiHealthbars extends JavaPlugin {
 
     private float customHealth;
-    private static AntiHealthbars INSTANCE;
+    private static AntiHealthbars instance;
 
     @Override
     public void onEnable() {
-        INSTANCE = this;
+        instance = this;
         saveDefaultConfig();
         setCustomHealth(getConfig().getDouble("custom-health"));
         ProtocolLibrary.getProtocolManager().addPacketListener(new HealthbarAdapter());
@@ -20,8 +20,8 @@ public class AntiHealthbars extends JavaPlugin {
         if(reloadCommand != null) reloadCommand.setExecutor(new ReloadCommand());
     }
 
-    public static AntiHealthbars getINSTANCE() {
-        return INSTANCE;
+    public static AntiHealthbars getInstance() {
+        return instance;
     }
 
     public float getCustomHealth() {

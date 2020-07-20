@@ -1,8 +1,8 @@
 name: AntiHealthbars
 main: me.kuraky.antihealthbars.AntiHealthbars
-version: 0.1.0b
+version: 1.0.0
 description: Blocks healthbar mods
-api-version: 1.15
+api-version: 1.16
 author: Kuraky
 depend: [ProtocolLib]
 permissions:

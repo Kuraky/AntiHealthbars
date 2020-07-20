@@ -9,7 +9,7 @@ public class ReloadCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         if(commandSender.hasPermission("antihealthbars.reload")) {
-            AntiHealthbars plugin = AntiHealthbars.getINSTANCE();
+            AntiHealthbars plugin = AntiHealthbars.getInstance();
 
             plugin.reloadConfig();
 
