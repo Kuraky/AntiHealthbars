@@ -6,7 +6,7 @@ import com.comphenix.protocol.events.ListenerPriority;
 import com.comphenix.protocol.events.PacketAdapter;
 import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.events.PacketEvent;
-import net.minecraft.server.v1_16_R1.DataWatcher;
+import net.minecraft.server.v1_16_R2.DataWatcher;
 
 import java.lang.reflect.Field;
 import java.util.List;
